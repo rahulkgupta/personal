@@ -1,6 +1,6 @@
 module.exports = {
   siteMeta: {
-    title: 'Home',
+    title: 'Rahul',
     author: 'Rahul Gupta',
     image: '/static/site-feature.png',
     description: 'Personal Blog',
