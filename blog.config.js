@@ -6,7 +6,7 @@ module.exports = {
     description: 'Personal Blog',
     siteUrl: 'http://rahulkgupta.me',
     social: {
-      twitter: '_jolvera',
+      twitter: 'rahulkgupta',
     },
     postsPerPage: 5,
   },

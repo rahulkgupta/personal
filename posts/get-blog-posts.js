@@ -2,6 +2,7 @@ const fs = require('fs')
 const path = require('path')
 
 const DIR = path.join(process.cwd(), '/pages/posts/')
+console.log(DIR)
 const META = /export\s+const\s+meta\s+=\s+({[\s\S]*?\n})/
 const files = fs
   .readdirSync(DIR)
@@ -12,14 +13,13 @@ module.exports = files
     const name = path.join(DIR, file)
     const contents = fs.readFileSync(name, 'utf-8')
     const match = META.exec(contents)
-
+    console.log(name)
     if (!match || typeof match[1] !== 'string') {
       throw new Error(`${name} needs to export const meta = {}`)
     }
 
     // eslint-disable-next-line no-eval
     const meta = eval('(' + match[1] + ')')
-
     return {
       ...meta,
       path: '/posts/' + file.replace(/\.mdx?$/, ''),
