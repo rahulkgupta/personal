@@ -7,8 +7,6 @@ import Title from './title'
 function Header({ path, pageTitle, ogImage }) {
   return (
     <>
-      <Head title={pageTitle} ogImage={ogImage} />
-
       <header>
         <Title path={path} />
         <Nav />
