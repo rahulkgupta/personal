@@ -7,7 +7,6 @@ function Header({ path, pageTitle, ogImage }) {
   return (
     <>
       <header>
-        <Title path={path} />
         <Nav />
       </header>
       <style jsx>

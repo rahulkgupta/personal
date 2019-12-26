@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Nav = () => (
   <nav>
-    <Link href="/thoughts">
+    <Link href="/">
       <a>Thoughts</a>
     </Link>
     <Link href="/projects">
