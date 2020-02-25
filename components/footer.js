@@ -2,8 +2,8 @@ function Footer() {
   return (
     <footer>
       <p>
-        <a href="https://twitter.com/rahulkartgupta">Twitter</a>
-        <a href="https://www.linkedin.com/in/rahulkartgupta/">Linkedin</a>
+        <div><a href="https://twitter.com/rahulkartgupta">Twitter</a></div>
+        <div><a href="https://www.linkedin.com/in/rahulkartgupta/">Linkedin</a></div>
       </p>
       <style jsx>{`
         footer {
