@@ -1,10 +1,8 @@
 function Footer() {
   return (
     <footer>
-      <p>
-        Proudly built with <a href="https://nextjs.org">Next.js</a> -{' '}
-        <a href="/feed.json">RSS Feed</a>
-      </p>
+      <p><a href="https://twitter.com/rahulkartgupta">Twitter</a></p>
+      <p><a href="https://www.linkedin.com/in/rahulkartgupta/">Linkedin</a></p>
       <style jsx>{`
         footer {
           padding: 1em 0;
