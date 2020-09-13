@@ -1,0 +1,25 @@
+import { withRouter } from "next/router";
+import BlogPost from "../../components/layouts/blog-post";
+
+export const meta = {
+  published: true,
+  publishedAt: "2020-09-13",
+  title: "No Expectations",
+  summary: "An Update to This Blog",
+  image: "/static/site-feature.png",
+};
+
+export default withRouter(({ children, router }) => (
+  <BlogPost path={router.pathname} meta={meta}>
+    {children}
+  </BlogPost>
+));
+
+It's been a while since I have added anything here, partly because I haven't been in the right mindset and partly because I have not linked the stuff that I'm working on to this site.
+It's been hard to get in a rhythm while COVID, and now wildfires, are happening. I've also felt like hesistant about putting unfinished or low quality stuff on this site because I set unrealistic expecations of what this site should be.
+I'm going to change that going forward and set no expectations on myself and this site. I'm going to try random stuff and put them up here regardless of the quality. This post is barely edited, probaby has many grammatical and spelling errors, and that's ok.
+
+I've realized during quarantine that I've historically had unrealistic expectations of myself. I have had these expectations that I will be "productive" and have a positive impact on the world, as opposed to being ok with just existing.
+Similarly, I keep trying to do things for external reasons, chasing external results (which I inevitably do not achieve) instead of enjoying the process.
+So, I'm going to stop expecting "big things" from myself and start figuring out what I like doing just for the sake of doing it.
+Hopefully, this site can help me figure it out.
